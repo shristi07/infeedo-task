@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function ChatWindow() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [userInput, setUserInput] = useState({
     type: "req",
     text: "",
@@ -23,11 +23,11 @@ function ChatWindow() {
           </div>
           <div className="ChatWindow-header">
             <div>
-              <h2>IRIS</h2>
-              <h4>Hello</h4>
-              <h5>
+              <h4>IRIS</h4>
+              <h5>Hello</h5>
+              <h6>
                 I am Iris, a virtual assistant <br /> How may I help you?
-              </h5>
+              </h6>
             </div>
           </div>
           <div className="ChatWindow-body">
